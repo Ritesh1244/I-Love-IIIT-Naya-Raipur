@@ -6,46 +6,45 @@ import Loading from "../loading";
 export const metadata = {
   title: "Training and Placement - IIIT Naya Raipur",
   description:
-    "Explore the Training and Placement activities at DSPM IIIT Naya Raipur. Learn about the T&P cell, its initiatives, and how it empowers students for successful careers.",
+    "Explore the transformative efforts of the Training and Placement Cell at DSPM IIIT Naya Raipur. Discover how it bridges academics and careers.",
   keywords:
-    "Training and Placement, IIIT Naya Raipur, T&P cell, Career Cell, Student Internships, Campus Placements",
+    "Training and Placement, IIIT Naya Raipur, Career Growth, Internships, Campus Placements",
 };
 
 const TNP = () => {
   return (
-    <main className="px-6 py-10 bg-gray-50">
-      <section className="max-w-6xl mx-auto">
-        {/* Page Title */}
-        <div className="mb-8 text-center">
-          <h1 className="text-4xl font-bold text-gray-900">
-            Training and Placement
+    <main className="px-8 py-12 bg-gradient-to-r from-gray-100 via-white to-gray-50">
+      <section className="max-w-7xl mx-auto">
+        {/* Page Header */}
+        <div className="mb-12 text-center">
+          <h1 className="text-5xl font-extrabold text-blue-900">
+            Training & Placement
           </h1>
-          <p className="mt-2 text-lg text-gray-600">
-            Empowering students with skills and opportunities for a successful
-            career.
+          <p className="mt-4 text-xl text-blue-700">
+            Where academic potential meets career excellence.
           </p>
-          <hr className="mt-4 border-gray-300" />
+          <hr className="mt-6 border-blue-300" />
         </div>
 
-        {/* T&P Incharge Details */}
+        {/* Profile Section */}
         <Suspense fallback={<Loading />}>
-          <div className="flex flex-col items-center max-w-4xl p-6 mx-auto mb-12 bg-white rounded-lg shadow-md md:flex-row">
+          <div className="flex flex-col items-center gap-6 p-8 mb-16 bg-gradient-to-r from-blue-100 via-white to-blue-50 rounded-lg shadow-lg md:flex-row">
             <Image
               src={amit}
-              width={150}
-              height={150}
-              className="border-4 border-gray-300 rounded-full"
-              alt="Amit Kumar Agrawal Profile"
+              width={160}
+              height={160}
+              className="border-4 border-blue-300 rounded-full"
+              alt="Amit Kumar Agrawal"
             />
-            <div className="mt-4 text-center md:mt-0 md:ml-6 md:text-left">
-              <h2 className="text-2xl font-semibold text-gray-800">
+            <div className="text-center md:text-left">
+              <h2 className="text-2xl font-semibold text-blue-900">
                 Amit Kumar Agrawal
               </h2>
-              <p className="text-gray-700">
+              <p className="text-lg text-blue-800">
                 Incharge - Training and Career Cell
               </p>
-              <p className="mt-2">
-                <span className="font-semibold text-gray-800">Email:</span>{" "}
+              <p className="mt-3 text-blue-700">
+                <strong>Email:</strong>{" "}
                 <a
                   href="mailto:amitag@iiitnr.edu.in"
                   className="text-blue-600 underline hover:text-blue-800"
@@ -57,51 +56,81 @@ const TNP = () => {
           </div>
         </Suspense>
 
-        {/* What Do We Do Section */}
-        <div className="mb-12">
-          <h2 className="mb-4 text-3xl font-bold text-gray-900">
-            What Do We Do?
+        {/* About Section */}
+        <div className="mb-16">
+          <h2 className="mb-6 text-4xl font-bold text-blue-900">
+            Bridging Academics and Careers
           </h2>
-          <p className="text-lg leading-8 text-gray-700">
-            The Training & Placement Office at DSPM IIIT-Naya Raipur is
-            dedicated to bridging the gap between academic learning and
-            professional growth. Our office collaborates with leading
-            organizations and institutes to offer internships and training
-            programs, while also facilitating placements for students in
-            esteemed companies.
+          <p className="text-lg leading-8 text-blue-800">
+            The Training & Placement Cell at DSPM IIIT-Naya Raipur plays a
+            pivotal role in preparing students for the competitive professional
+            world. With a mission to connect academic learning to real-world
+            opportunities, the T&P cell ensures that every student is equipped
+            with the skills, confidence, and resources to excel.
           </p>
-          <p className="mt-6 text-lg leading-8 text-gray-700">
-            From organizing campus interviews to nurturing students with
-            physical, behavioral, and societal skills, the T&P cell ensures
-            holistic development. The ultimate goal is to prepare our students
-            for the competitive world by developing their all-round abilities,
-            empowering them to achieve their career aspirations.
+          <p className="mt-6 text-lg leading-8 text-blue-800">
+            From facilitating internships to organizing world-class placement
+            drives, the cell works relentlessly to foster holistic growth,
+            making every student industry-ready and primed for success.
           </p>
         </div>
 
-        {/* Additional T&P Cell Details */}
-        <div className="max-w-5xl p-6 mx-auto bg-white rounded-lg shadow-md">
-          <h3 className="mb-4 text-2xl font-semibold text-gray-800">
-            Key Activities of the T&P Cell
-          </h3>
-          <ul className="space-y-2 text-lg text-gray-700 list-disc list-inside">
-            <li>
-              Collaborates with corporate houses and industries for internships
-              and training programs.
-            </li>
-            <li>
-              Organizes campus interviews, group discussions, and skill
-              development workshops.
-            </li>
-            <li>
-              Provides state-of-the-art infrastructure for placement activities.
-            </li>
-            <li>Focuses on academic and interpersonal skill enhancement.</li>
-            <li>
-              Encourages students to pursue their passion by placing them in
-              organizations of their choice.
-            </li>
-          </ul>
+        {/* Key Activities */}
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="p-6 bg-gradient-to-b from-blue-200 to-blue-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-blue-900">
+              Corporate Collaborations
+            </h3>
+            <p className="text-blue-800">
+              Building partnerships with top industries and organizations for
+              internships, training, and career opportunities.
+            </p>
+          </div>
+          <div className="p-6 bg-gradient-to-b from-green-200 to-green-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-green-900">
+              Campus Drives
+            </h3>
+            <p className="text-green-800">
+              Hosting campus interviews and recruitment sessions to connect
+              students with esteemed companies.
+            </p>
+          </div>
+          <div className="p-6 bg-gradient-to-b from-yellow-200 to-yellow-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-yellow-900">
+              Skill Development
+            </h3>
+            <p className="text-yellow-800">
+              Organizing workshops, mock interviews, and group discussions to
+              enhance soft and technical skills.
+            </p>
+          </div>
+          <div className="p-6 bg-gradient-to-b from-purple-200 to-purple-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-purple-900">
+              State-of-the-Art Facilities
+            </h3>
+            <p className="text-purple-800">
+              Offering modern infrastructure and tools to streamline placement
+              activities.
+            </p>
+          </div>
+          <div className="p-6 bg-gradient-to-b from-red-200 to-red-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-red-900">
+              Student Empowerment
+            </h3>
+            <p className="text-red-800">
+              Encouraging students to pursue their dreams by aligning their
+              passions with their careers.
+            </p>
+          </div>
+          <div className="p-6 bg-gradient-to-b from-indigo-200 to-indigo-100 rounded-lg shadow-md">
+            <h3 className="mb-4 text-xl font-semibold text-indigo-900">
+              Holistic Growth
+            </h3>
+            <p className="text-indigo-800">
+              Nurturing interpersonal and societal skills to ensure well-rounded
+              development.
+            </p>
+          </div>
         </div>
       </section>
     </main>

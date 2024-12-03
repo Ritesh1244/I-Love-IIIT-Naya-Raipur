@@ -1,4 +1,4 @@
-// File: D:\my\IIIT-NR-CLONE\app\curriculum\page.js
+// File: C:\Users\Ritesh kumar\Downloads\IIIT-NR-CLONE-main (1)\IIIT-NR-CLONE-main\app\curriculum\page.js
 import * as entry from '../../../../app/curriculum/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

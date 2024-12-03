@@ -11,9 +11,9 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Curriculum", href: "/curriculum" },
-    { name: "T&P Cell", href: "/tnp" },
-    { name: "Patents", href: "/patents" },
+    { name: "Academic", href: "/curriculum" },
+    { name: "Placement Cell", href: "/tnp" },
+    { name: "Innovations", href: "/patents" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -35,27 +35,28 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed z-50 w-full bg-black bg-opacity-60 backdrop-blur-md">
+    <nav className="fixed z-50 w-full bg-[#43536a] backdrop-blur-md">
       <div className="max-w-[1550px] flex flex-wrap items-center justify-between mx-auto p-4">
         <Link
           href="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
         >
+          {/* Updated Logo with Larger Size */}
           <img
             src="https://www.iiitnr.ac.in/sites/all/themes/iiit/head.png"
-            className="h-9"
-            alt="i love iiitnr logo"
+            className="h-12 w-12 lg:h-16 lg:w-16"
+            alt="I Love IIITNR logo"
           />
-          <span className="self-center text-2xl font-semibold text-white whitespace-nowrap">
-            <span className="text-lg lg:text-2xl">
-              I <b className="text-red-500">Love</b> IIIT Naya Raipur
+          <span className="self-center text-3xl font-bold text-white whitespace-nowrap">
+            <span>
+              I <b className="text-blue-400">Love</b> IIIT Naya Raipur
             </span>
           </span>
         </Link>
         <button
           onClick={toggleNavbar}
           type="button"
-          className="inline-flex items-center justify-center w-10 h-10 p-2 text-red-500 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
+          className="inline-flex items-center justify-center w-10 h-10 p-2 text-blue-400 rounded-lg md:hidden hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-300"
           aria-controls="navbar-default"
           aria-expanded={isOpen}
         >
@@ -96,15 +97,15 @@ const Navbar = () => {
           className={`${isOpen ? "block" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="flex flex-col p-4 mt-4 font-medium bg-gray-900 border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent md:dark:bg-transparent">
+          <ul className="flex flex-col p-4 mt-4 font-medium bg-gray-900 border border-gray-100 rounded-lg md:p-0 md:flex-row md:space-x-6 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-transparent">
             {navLinks.map((link, index) => (
               <li key={index}>
                 <Link
                   href={link.href}
                   className={`block py-2 px-1 lg:px-3 rounded-md md:p-0 text-white transition-all duration-300 ${
                     pathname === link.href
-                      ? "bg-red-400 bg-transparent md:bg-transparent md:text-red-500"
-                      : "hover:bg-gray-800 md:hover:bg-transparent md:hover:text-red-500"
+                      ? "bg-blue-500 md:bg-transparent md:text-blue-300"
+                      : "hover:bg-gray-700 md:hover:bg-transparent md:hover:text-blue-400"
                   }`}
                   aria-current={pathname === link.href ? "page" : undefined}
                   onClick={() => setIsOpen(false)} // Close mobile menu on link click

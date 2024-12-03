@@ -1,107 +1,106 @@
 import React from "react";
 
 export const metadata = {
-  title: "About - I Love IIIT Naya Raipur",
+  title: "Explore IIIT Naya Raipur - A Hub of Innovation",
   description:
-    "Discover why you'll love IIIT Naya Raipur! Explore our dynamic academics, cutting-edge research labs, semester abroad opportunities, and holistic growth programs.",
+    "Step into the world of cutting-edge technology and holistic education at IIIT Naya Raipur. Learn about dynamic academics, advanced research, global exposure, and more!",
   keywords:
-    "IIIT Naya Raipur, About IIIT NR, Research Labs, Semester Abroad, Holistic Growth, Engineering Education",
+    "IIIT Naya Raipur, Innovation, Research Labs, Global Education, Technological Excellence, Engineering Future",
 };
 
 const About = () => {
   return (
-    <main className="px-6 py-12 bg-gray-100">
-      <section className="max-w-5xl mx-auto">
+    <main className="px-8 py-16 bg-gradient-to-r from-purple-100 via-indigo-200 to-blue-300">
+      <section className="max-w-6xl mx-auto space-y-10">
         {/* Page Title */}
-        <h1 className="mb-8 text-4xl font-extrabold text-center text-gray-900">
-          About IIIT Naya Raipur
+        <h1 className="text-5xl font-extrabold text-center text-indigo-800 mb-6">
+          Welcome to IIIT Naya Raipur
         </h1>
-        <p className="text-lg text-center text-gray-700">
-          Discover why iiit nr is a leading destination for students aspiring to
-          shape the future of technology and innovation. From cutting-edge
-          academics to unmatched extracurricular opportunities, we have
-          something for everyone.
+        <p className="text-lg text-center text-gray-600 max-w-3xl mx-auto">
+          IIIT Naya Raipur stands as a beacon for students who dream of shaping
+          the future. Join us for an educational journey that blends technical
+          prowess with real-world experience.
         </p>
 
         {/* Sections */}
-        <div className="mt-12 space-y-12">
+        <div className="space-y-12 mt-16">
           {/* Dynamic Academics */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
               Dynamic Academics
             </h2>
-            <ul className="space-y-2 text-gray-700 list-disc list-inside">
-              <li>Experience hands-on engineering from day one at IIIT NR.</li>
+            <ul className="space-y-3 text-lg text-gray-700 list-disc list-inside">
               <li>
-                A unique skill-first approach with practical projects embedded
-                in every semester.
+                Hands-on engineering experience from the very first semester.
               </li>
               <li>
-                Cutting-edge modular courses tailored for future technologies.
+                Practical, project-based learning with industry relevance.
               </li>
               <li>
-                An innovative 'T'-Education model ensures a blend of depth and
-                breadth in knowledge.
+                Future-forward modular courses tailored to emerging
+                technologies.
               </li>
               <li>
-                Strong industry connections provide unmatched internship and
-                elective opportunities.
+                The unique "T"-Education model ensures both depth and breadth.
+              </li>
+              <li>
+                Unbeatable industry connections for internships and electives.
               </li>
             </ul>
           </section>
 
           {/* Advanced Research Labs */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
-              Advanced Research Labs
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
+              State-of-the-Art Research Labs
             </h2>
-            <p className="text-gray-700">
-              Discover the future at IIIT NR with state-of-the-art labs in Data
-              Science, Artificial Intelligence, IoT, and more.
+            <p className="text-lg text-gray-700">
+              Dive into groundbreaking research with our labs focusing on Data
+              Science, AI, IoT, and more!
             </p>
           </section>
 
           {/* Semester Abroad Experiences */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
-              Semester Abroad Experiences
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
+              Global Exposure - Semester Abroad
             </h2>
-            <p className="text-gray-700">
-              Love the global exposure IIIT NR offers, with financial support of
-              up to ₹5 Lakhs for international projects.
+            <p className="text-lg text-gray-700">
+              Unlock international opportunities with up to ₹5 Lakhs financial
+              aid for global projects.
             </p>
           </section>
 
           {/* Research & Innovation */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
               Fueling Research & Innovation
             </h2>
-            <p className="text-gray-700">
-              IIIT NR nurtures innovation with grants for research publications,
-              conferences, and prototype development.
+            <p className="text-lg text-gray-700">
+              We support innovation with grants for research, conferences, and
+              prototype development.
             </p>
           </section>
 
           {/* Holistic Personality Growth */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
-              Holistic Personality Growth
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
+              Holistic Growth - Beyond Academics
             </h2>
-            <p className="text-gray-700">
-              Become a leader at IIIT NR through workshops, club activities, and
-              teamwork-focused events.
+            <p className="text-lg text-gray-700">
+              Develop leadership skills through workshops, clubs, and events
+              focused on personal growth.
             </p>
           </section>
 
           {/* Extracurricular Activities */}
-          <section className="p-6 bg-white rounded-lg shadow-lg">
-            <h2 className="mb-4 text-2xl font-bold text-gray-800">
-              Unmatched Extracurriculars
+          <section className="p-8 bg-white rounded-3xl shadow-xl border-l-4 border-indigo-500">
+            <h2 className="text-3xl font-semibold text-indigo-700 mb-4">
+              Unleash Your Passions
             </h2>
-            <p className="text-gray-700">
-              From sports to cultural events, IIIT NR supports your passions
-              with financial aid and state-of-the-art facilities.
+            <p className="text-lg text-gray-700">
+              Explore your creative and athletic sides with our wide range of
+              extracurricular activities, supported by world-class facilities.
             </p>
           </section>
         </div>

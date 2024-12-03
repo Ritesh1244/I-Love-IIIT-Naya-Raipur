@@ -1,10 +1,10 @@
 import React from "react";
 
 export const metadata = {
-  title: "Patents - I Love IIIT Naya Raipur",
+  title: "Innovative Patents - IIIT Naya Raipur",
   description:
-    "Explore the innovative patents filed by IIIT Naya Raipur's talented students and faculty. Learn about their inventions and contributions to technology.",
-  keywords: "IIIT Naya Raipur patents, Innovative patents, Student inventions",
+    "Explore the trailblazing patents by IIIT Naya Raipur's brilliant minds. Delve into cutting-edge technologies and their potential to revolutionize industries.",
+  keywords: "IIIT Naya Raipur innovations, patents, student inventions, technology breakthroughs",
 };
 
 // Patent data
@@ -20,7 +20,7 @@ const patents = [
     status: "Awarded",
   },
   {
-    title: "System and Method to Segregate the Fruits by Machine Learning",
+    title: "AI-Powered Fruit Segregation System",
     inventors: "Mallikharjuna Rao K, Yathin Prakash Kethepalli, Chahat Mittal",
     applicationNo: "202221052788",
     filingDate: "15 Sept 2022",
@@ -30,9 +30,9 @@ const patents = [
   },
   {
     title:
-      "System and Method for Determining Body Temperature Using Smartphone Coupled With USB Thermal Camera",
+      "Smartphone-Based Body Temperature Detection System with USB Thermal Camera Integration",
     inventors:
-      "Shrivishal Tripathi; Divyansh Kushwaha; Deepanshu Pratik; Shivanshu Kumar Prajapati; Manoj Kumar Majumder; Vivek Tiwari; Anurag Singh; Sresha Yadav, Muneendra Ojha",
+      "Shrivishal Tripathi, Divyansh Kushwaha, Deepanshu Pratik, Shivanshu Kumar Prajapati, Manoj Kumar Majumder, Vivek Tiwari, Anurag Singh, Sresha Yadav, Muneendra Ojha",
     applicationNo: "202221041826",
     filingDate: "23/7/2022",
     publicationDate: "--",
@@ -44,48 +44,45 @@ const patents = [
 
 const Patents = () => {
   return (
-    <main className="px-6 py-10 bg-gray-100">
-      <section className="max-w-5xl mx-auto">
-        <h1 className="mb-8 text-4xl font-bold text-center text-gray-900">
-          Patents
+    <main className="bg-gradient-to-r from-blue-100 via-green-100 to-yellow-50 px-8 py-12">
+      <section className="max-w-6xl mx-auto">
+        <h1 className="text-5xl font-extrabold text-center text-gray-900 mb-10">
+          Groundbreaking Patents by IIIT Naya Raipur
         </h1>
-        <p className="mb-12 text-lg text-center text-gray-700">
-          Discover the groundbreaking inventions and contributions to technology
-          from the innovative minds at IIIT Naya Raipur.
+        <p className="text-lg text-center text-gray-700 mb-16">
+          Discover the transformative innovations brought to life by IIIT Naya Raipur's talented students and faculty. From smart systems to cutting-edge technologies, these patents are setting new standards.
         </p>
 
         {/* Patent List */}
-        <div className="space-y-8">
+        <div className="space-y-10">
           {patents.map((patent, index) => (
             <div
               key={index}
-              className="p-6 transition-shadow bg-white rounded-lg shadow-lg hover:shadow-xl"
+              className="p-8 transition-all duration-300 bg-white rounded-xl shadow-xl hover:shadow-2xl hover:scale-105"
             >
-              <h2 className="text-2xl font-semibold text-gray-800">
-                {patent.title}
-              </h2>
-              <p className="mt-2 text-gray-700">
-                <strong>Inventors:</strong> {patent.inventors}
+              <h2 className="text-3xl font-bold text-indigo-700 mb-4">{patent.title}</h2>
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Inventors:</strong> {patent.inventors}
               </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Application No.:</strong> {patent.applicationNo}
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Application No.:</strong> {patent.applicationNo}
               </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Filing Date:</strong> {patent.filingDate}
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Filing Date:</strong> {patent.filingDate}
               </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Publication Date:</strong> {patent.publicationDate}
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Publication Date:</strong> {patent.publicationDate}
               </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Patent No.:</strong> {patent.patentNo}
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Patent No.:</strong> {patent.patentNo}
               </p>
-              <p className="mt-2 text-gray-700">
-                <strong>Status:</strong>{" "}
+              <p className="text-lg text-gray-800">
+                <strong className="text-indigo-600">Status:</strong>{" "}
                 <span
                   className={`${
                     patent.status === "Awarded"
-                      ? "text-green-600"
-                      : "text-yellow-600"
+                      ? "text-green-500"
+                      : "text-yellow-500"
                   } font-semibold`}
                 >
                   {patent.status}

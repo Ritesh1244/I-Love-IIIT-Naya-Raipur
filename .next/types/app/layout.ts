@@ -1,4 +1,4 @@
-// File: D:\my\IIIT-NR-CLONE\app\layout.js
+// File: C:\Users\Ritesh kumar\Downloads\IIIT-NR-CLONE-main (1)\IIIT-NR-CLONE-main\app\layout.js
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
