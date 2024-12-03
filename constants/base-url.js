@@ -1,1 +1,1 @@
-export const baseUrl = `https://i-love-iiit-naya-raipur.vercel.app`;
+export const baseUrl = `https://iiitnayaraipur.vercel.app/`;
