@@ -187,7 +187,7 @@ const Home = () => {
     <>
       {/* Add meta tag for Google verification */}
       <Head>
-        <meta name="google-site-verification" content="U7FUszpnidtgSSFpCpzPPqgqQl5yfqbtPVy3RKmlPAw" />
+        <meta name="google-site-verification" content="BTRKo61Gadt04gd3KgS51UmXaJir6JQ-RuL3iuHr_SQ" />
         <title>I Love IIITNR - Discover Excellence</title>
         <meta name="description" content="Explore the vibrant campus life, state-of-the-art facilities, and academic excellence at IIIT Naya Raipur." />
       </Head>
